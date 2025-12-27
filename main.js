@@ -7,7 +7,7 @@ const result = document.getElementById('number')
 
 add.addEventListener('click',
     ()=>{
-    num = Number(result.textContent) 
+    let num = Number(result.textContent) 
     result.textContent=num+=1  
      if(num>0){   result.style.color= 'green'}
      if(num==0){  result.style.color= 'black'}
@@ -17,7 +17,7 @@ add.addEventListener('click',
 
 
 minus.addEventListener('click',()=>{
-    num = Number(result.textContent)
+    let num = Number(result.textContent)
     result.textContent= num-=1
     if(num<0){   result.style.color= 'red'}
     if(num==0){  result.style.color= 'black'}
